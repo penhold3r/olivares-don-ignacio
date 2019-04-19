@@ -1,0 +1,36 @@
+{
+	"name": "olivares-don-ignacio",
+	"private": true,
+	"description": "Olivares de Don Ignacio web site",
+	"version": "1.0.0",
+	"author": "Penholder designerd",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/penhold3r/olivares-don-ignacio.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"start": "npm run develop",
+		"serve": "gatsby serve"
+	},
+	"dependencies": {
+		"gatsby": "^2.3.16",
+		"gatsby-image": "^2.0.37",
+		"gatsby-plugin-manifest": "^2.0.28",
+		"gatsby-plugin-offline": "^2.0.25",
+		"gatsby-plugin-react-helmet": "^3.0.12",
+		"gatsby-plugin-sass": "^2.0.11",
+		"gatsby-plugin-sharp": "^2.0.32",
+		"gatsby-source-filesystem": "^2.0.29",
+		"gatsby-transformer-sharp": "^2.1.17",
+		"node-sass": "^4.11.0",
+		"node-sass-glob-importer": "^5.3.1",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.0",
+		"sanitize.css": "^8.0.0"
+	}
+}

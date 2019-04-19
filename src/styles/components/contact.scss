@@ -1,0 +1,62 @@
+section.contact {
+	background: $main-color;
+	padding: 30px 15px;
+	position: relative;
+
+	h2 {
+		border-bottom: 3px solid $white;
+		color: $white;
+		font-family: $display-font;
+		letter-spacing: 0.05em;
+		margin: 0 auto 30px;
+		padding-bottom: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		width: fit-content;
+	}
+
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 400px;
+		position: relative;
+
+		.form-field {
+			position: relative;
+			margin: 0 0 15px;
+
+			label {
+				color: $white;
+				font-family: $display-font;
+				font-size: 0.7em;
+				letter-spacing: 0.07em;
+				text-transform: uppercase;
+			}
+
+			input,
+			textarea {
+				background: $white;
+				border: none;
+				padding: 3px 6px;
+				width: 100%;
+			}
+
+			textarea {
+				resize: vertical;
+				height: 4em;
+			}
+		}
+
+		.submit {
+			border: none;
+			background: $dark-color;
+			color: $white;
+			font-family: $display-font;
+			font-size: 0.9em;
+			letter-spacing: 0.07em;
+			text-transform: uppercase;
+			padding: 9px 15px;
+		}
+	}
+}

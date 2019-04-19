@@ -1,0 +1,21 @@
+@import './pressets/*.scss';
+
+*,
+*:after,
+*:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-appearance: none !important;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	background: $light-color;
+	color: $dark-color;
+	font-family: $main-font;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+@import './components/*.scss';

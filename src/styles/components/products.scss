@@ -1,0 +1,50 @@
+section.products {
+	padding: 30px 0 0;
+	position: relative;
+
+	.prods-title {
+		border-bottom: 3px solid $main-color;
+		color: $main-color;
+		font-family: $display-font;
+		letter-spacing: 0.05em;
+		margin: 0 auto 30px;
+		padding-bottom: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		width: fit-content;
+	}
+
+	.prods-list {
+		background: no-repeat center center / cover;
+		padding: 60px 30px;
+
+		.prods-grid {
+			display: grid;
+			grid-gap: 15px;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			margin: 0 auto;
+			max-width: 700px;
+
+			.prod-card {
+				background: $white;
+				padding: 15px;
+
+				img {
+					display: block;
+					height: 200px;
+					mix-blend-mode: multiply;
+					object-fit: contain;
+					width: 100%;
+				}
+
+				h4 {
+					color: $main-color;
+					font-size: 1.25em;
+					margin: 0;
+					text-align: center;
+					padding: 15px 0 0;
+				}
+			}
+		}
+	}
+}

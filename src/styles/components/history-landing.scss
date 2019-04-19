@@ -1,0 +1,54 @@
+section.history-landing {
+	position: relative;
+
+	.history-intro {
+		background: $main-color;
+		padding: 15px;
+
+		h4 {
+			align-items: center;
+			border: 3px solid $white;
+			color: $white;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			max-width: 1400px;
+			padding: 30px;
+			width: 100%;
+			font-weight: normal;
+			font-size: 1.5em;
+			letter-spacing: 0.2em;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		margin: 30px auto;
+		max-width: 1430px;
+		padding: 15px;
+		background: no-repeat center center / contain;
+		padding: 90px 15px;
+
+		p {
+			margin: 0 auto;
+			text-align: center;
+			font-size: 1.5em;
+			line-height: 1.25;
+			letter-spacing: 0.05em;
+			max-width: 800px;
+		}
+
+		.history-link {
+			display: inline-block;
+			margin: 60px auto 0;
+			background: $main-color;
+			color: $white;
+			text-decoration: none;
+			font-family: $display-font;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			padding: 9px 15px;
+		}
+	}
+}

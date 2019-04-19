@@ -1,0 +1,35 @@
+section.hero {
+	position: relative;
+	height: 50vh;
+	min-height: 400px;
+
+	.hero-img {
+		display: block;
+		height: 100%;
+		object-fit: cover;
+		object-position: 100% 50%;
+		position: absolute;
+		width: 100%;
+		z-index: 0;
+	}
+
+	.tagline {
+		left: 0;
+		margin: 0 auto;
+		max-width: 1430px;
+		padding: 15px;
+		position: absolute;
+		right: 0;
+		top: 40%;
+
+		h4 {
+			color: $white;
+			font-family: $display-font;
+			font-size: 3em;
+			letter-spacing: 0.05em;
+			margin: 0;
+			text-shadow: 0 3px 3px $dark-color;
+			text-transform: uppercase;
+		}
+	}
+}
