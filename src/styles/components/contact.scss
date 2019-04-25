@@ -1,5 +1,5 @@
 section.contact {
-	background: $main-color;
+	background: linear-gradient(45deg, $main-color, $dark-color);
 	padding: 30px 15px;
 	position: relative;
 
@@ -49,14 +49,20 @@ section.contact {
 		}
 
 		.submit {
-			border: none;
 			background: $dark-color;
+			border: none;
 			color: $white;
+			cursor: pointer;
 			font-family: $display-font;
 			font-size: 0.9em;
 			letter-spacing: 0.07em;
-			text-transform: uppercase;
 			padding: 9px 15px;
+			text-transform: uppercase;
+			transition: all 0.3s;
+
+			&:hover {
+				background: $main-color;
+			}
 		}
 	}
 }

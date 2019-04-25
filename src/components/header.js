@@ -1,13 +1,26 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import Link from './link'
 
 import logo from '../images/olivares_don_ignacio-logo.svg'
+import facebook from '../images/facebook.svg'
+import twitter from '../images/twitter.svg'
+import instagram from '../images/instagram.svg'
 
 const Header = () => (
 	<header className="site-header">
 		<div className="inner-header">
 			<div className="top-bar">
-				<div className="social" />
+				<div className="social">
+					<Link to="https://facebook.com" title="Facebook" className="social-link">
+						<img src={facebook} alt="f" />
+					</Link>
+					<Link to="https://twitter.com" title="Twitter" className="social-link">
+						<img src={twitter} alt="t" />
+					</Link>
+					<Link to="https://instagram.com" title="Instagram" className="social-link">
+						<img src={instagram} alt="ig" />
+					</Link>
+				</div>
 			</div>
 			<h1 className="logo">
 				<Link to="/">

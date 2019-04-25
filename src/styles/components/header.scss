@@ -15,9 +15,39 @@
 		width: 100%;
 
 		.top-bar {
-			background: $main-color;
+			background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.7));
+			display: flex;
 			grid-area: top-bar;
 			height: 30px;
+			justify-content: flex-end;
+
+			@include tablet {
+				display: none;
+			}
+
+			.social {
+				display: flex;
+				justify-content: space-between;
+				padding: 0 15px;
+				width: 129px;
+
+				.social-link {
+					height: 30px;
+					padding: 0 6px;
+					width: 30px;
+					transition: all 0.3s;
+
+					img {
+						height: 100%;
+						object-fit: contain;
+						width: 100%;
+					}
+
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
 		}
 
 		.logo {
@@ -33,6 +63,10 @@
 			grid-area: nav;
 			padding: 0 15px;
 
+			@include tablet {
+				display: none;
+			}
+
 			.nav-list {
 				display: flex;
 				margin: 0;
@@ -43,14 +77,20 @@
 					padding: 0;
 
 					a {
+						border-bottom: 3px solid $main-color;
 						color: $main-color;
-						text-decoration: none;
-						text-transform: uppercase;
 						font-family: $display-font;
 						font-size: 0.8em;
 						letter-spacing: 0.05em;
 						padding: 6px 0;
-						border-bottom: 3px solid $main-color;
+						text-decoration: none;
+						text-transform: uppercase;
+						transition: all 0.3s;
+
+						&:hover {
+							color: $dark-color;
+							border-bottom: 3px solid $dark-color;
+						}
 					}
 				}
 			}

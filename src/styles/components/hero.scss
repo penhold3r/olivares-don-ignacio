@@ -3,6 +3,11 @@ section.hero {
 	height: 50vh;
 	min-height: 400px;
 
+	@include tablet {
+		height: 300px;
+		min-height: auto;
+	}
+
 	.hero-img {
 		display: block;
 		height: 100%;
@@ -30,6 +35,10 @@ section.hero {
 			margin: 0;
 			text-shadow: 0 3px 3px $dark-color;
 			text-transform: uppercase;
+
+			@include tablet {
+				font-size: 2em;
+			}
 		}
 	}
 }

@@ -2,7 +2,7 @@ section.history-landing {
 	position: relative;
 
 	.history-intro {
-		background: $main-color;
+		background: linear-gradient(45deg, $main-color, rgba($dark-color, 0.8));
 		padding: 15px;
 
 		h4 {
@@ -10,14 +10,15 @@ section.history-landing {
 			border: 3px solid $white;
 			color: $white;
 			display: flex;
+			font-size: 1.5em;
+			font-weight: normal;
 			justify-content: center;
+			letter-spacing: 0.2em;
 			margin: 0 auto;
 			max-width: 1400px;
 			padding: 30px;
+			text-align: center;
 			width: 100%;
-			font-weight: normal;
-			font-size: 1.5em;
-			letter-spacing: 0.2em;
 		}
 	}
 
@@ -40,15 +41,21 @@ section.history-landing {
 		}
 
 		.history-link {
-			display: inline-block;
-			margin: 60px auto 0;
-			background: $main-color;
+			background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.8), $dark-color);
+			background-size: 200%;
 			color: $white;
-			text-decoration: none;
+			display: inline-block;
 			font-family: $display-font;
-			text-transform: uppercase;
 			letter-spacing: 0.05em;
+			margin: 60px auto 0;
 			padding: 9px 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: all 0.3s;
+
+			&:hover {
+				background-position-x: right;
+			}
 		}
 	}
 }

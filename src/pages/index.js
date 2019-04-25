@@ -43,7 +43,11 @@ const IndexPage = () => (
 						products.map((prod, key) => (
 							<div key={key} className="prod-card">
 								<img src={prod.image} alt={`bottle of ${prod.name}`} />
-								<h4>{prod.name}</h4>
+								<h4 className="prod-name">{prod.name}</h4>
+								<div className="prod-details">
+									<p className="prod-desc">{prod.desc}</p>
+									<p className="pack">{prod.qty}</p>
+								</div>
 							</div>
 						))}
 				</div>

@@ -27,7 +27,10 @@ section.products {
 
 			.prod-card {
 				background: $white;
+				cursor: pointer;
 				padding: 15px;
+				position: relative;
+				overflow: hidden;
 
 				img {
 					display: block;
@@ -37,12 +40,32 @@ section.products {
 					width: 100%;
 				}
 
-				h4 {
+				.prod-name {
 					color: $main-color;
 					font-size: 1.25em;
 					margin: 0;
 					text-align: center;
 					padding: 15px 0 0;
+				}
+
+				.prod-details {
+					background: linear-gradient(45deg, rgba($dark-color, 0.8), rgba($main-color, 0.8));
+					color: #fff;
+					height: 100%;
+					left: 0;
+					opacity: 0;
+					padding: 15px;
+					position: absolute;
+					top: 50%;
+					transition: all 0.4s;
+					width: 100%;
+				}
+
+				&:hover {
+					.prod-details {
+						opacity: 1;
+						top: 0;
+					}
 				}
 			}
 		}
