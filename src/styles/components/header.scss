@@ -3,23 +3,26 @@
 	position: sticky;
 	top: 0;
 	z-index: 99;
+	overflow-x: hidden;
 
 	.inner-header {
 		display: grid;
-		grid-template-columns: 200px 1fr;
-		grid-template-areas:
-			'top-bar    top-bar'
-			'logo       nav';
-		max-width: 1430px;
+		grid-template-columns: 175px 1fr;
+		max-width: $max-width;
 		margin: 0 auto;
 		width: 100%;
+		padding: 2rem 0 0;
 
 		.top-bar {
 			background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.7));
 			display: flex;
-			grid-area: top-bar;
-			height: 30px;
+			height: 2rem;
 			justify-content: flex-end;
+			left: 0;
+			padding: 0 1rem;
+			position: absolute;
+			top: 0;
+			width: 100vw;
 
 			@include tablet {
 				display: none;
@@ -28,13 +31,13 @@
 			.social {
 				display: flex;
 				justify-content: space-between;
-				padding: 0 15px;
+				padding: 0 0.5rem;
 				width: 129px;
 
 				.social-link {
-					height: 30px;
+					height: 2rem;
 					padding: 0 6px;
-					width: 30px;
+					width: 2rem;
 					transition: all 0.3s;
 
 					img {
@@ -51,17 +54,15 @@
 		}
 
 		.logo {
-			grid-area: logo;
 			margin: 0;
-			padding: 15px;
+			padding: 0.5rem;
 		}
 
 		.main-nav {
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			grid-area: nav;
-			padding: 0 15px;
+			padding: 0 0.5rem;
 
 			@include tablet {
 				display: none;
@@ -81,7 +82,7 @@
 						color: $main-color;
 						font-family: $display-font;
 						font-size: 0.8em;
-						letter-spacing: 0.05em;
+						letter-spacing: 0.075em;
 						padding: 6px 0;
 						text-decoration: none;
 						text-transform: uppercase;

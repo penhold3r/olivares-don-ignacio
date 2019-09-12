@@ -1,22 +1,25 @@
 section.history-landing {
+	background: $light-color;
+	padding: 0 1rem;
 	position: relative;
 
 	.history-intro {
 		background: linear-gradient(45deg, $main-color, rgba($dark-color, 0.8));
-		padding: 15px;
+		margin: 4rem auto;
+		max-width: $max-width;
+		padding: 1rem;
 
 		h4 {
 			align-items: center;
 			border: 3px solid $white;
 			color: $white;
 			display: flex;
-			font-size: 1.5em;
+			font-size: 1.5rem;
 			font-weight: normal;
 			justify-content: center;
-			letter-spacing: 0.2em;
-			margin: 0 auto;
-			max-width: 1400px;
-			padding: 30px;
+			letter-spacing: 0.2rem;
+			margin: 0;
+			padding: 3rem 1rem;
 			text-align: center;
 			width: 100%;
 		}
@@ -25,18 +28,18 @@ section.history-landing {
 	.content {
 		display: flex;
 		flex-direction: column;
-		margin: 30px auto;
-		max-width: 1430px;
-		padding: 15px;
+		margin: 1rem auto;
+		max-width: calc($max-width + 1rem);
+		padding: 0.5rem;
 		background: no-repeat center center / contain;
-		padding: 90px 15px;
+		padding: 90px 0.5rem;
 
 		p {
 			margin: 0 auto;
 			text-align: center;
-			font-size: 1.5em;
+			font-size: 1.5rem;
 			line-height: 1.25;
-			letter-spacing: 0.05em;
+			letter-spacing: 0.05rem;
 			max-width: 800px;
 		}
 
@@ -46,9 +49,9 @@ section.history-landing {
 			color: $white;
 			display: inline-block;
 			font-family: $display-font;
-			letter-spacing: 0.05em;
+			letter-spacing: 0.075rem;
 			margin: 60px auto 0;
-			padding: 9px 15px;
+			padding: 9px 1.5rem;
 			text-decoration: none;
 			text-transform: uppercase;
 			transition: all 0.3s;

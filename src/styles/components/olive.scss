@@ -1,0 +1,43 @@
+.olive {
+	&__content {
+		background: $white;
+		padding: 6rem 1rem 9rem;
+
+		.olive-block {
+			background: $main-gradient;
+			padding: 3rem;
+			position: relative;
+			margin: 0 auto 4rem;
+			max-width: 800px;
+
+			&__title,
+			p {
+				color: $white;
+				text-align: center;
+				letter-spacing: 0.05rem;
+			}
+
+			&__title {
+				font-size: 1.25rem;
+				font-weight: normal;
+				margin: 0 0 0.5rem;
+				text-transform: uppercase;
+			}
+
+			p {
+				line-height: 1.75;
+				margin: 0 0 1rem;
+			}
+
+			&:after {
+				content: '';
+				border: 3px solid $white;
+				bottom: 1rem;
+				left: 1rem;
+				position: absolute;
+				top: 1rem;
+				right: 1rem;
+			}
+		}
+	}
+}

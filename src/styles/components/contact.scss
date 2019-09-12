@@ -1,15 +1,16 @@
 section.contact {
 	background: linear-gradient(45deg, $main-color, $dark-color);
-	padding: 30px 15px;
+	padding: 3rem 0.5rem;
 	position: relative;
 
 	h2 {
 		border-bottom: 3px solid $white;
 		color: $white;
 		font-family: $display-font;
-		letter-spacing: 0.05em;
-		margin: 0 auto 30px;
-		padding-bottom: 15px;
+		font-weight: normal;
+		letter-spacing: 0.075rem;
+		margin: 0 auto 1rem;
+		padding-bottom: 0.5rem;
 		text-align: center;
 		text-transform: uppercase;
 		width: fit-content;
@@ -24,13 +25,13 @@ section.contact {
 
 		.form-field {
 			position: relative;
-			margin: 0 0 15px;
+			margin: 0 0 0.5rem;
 
 			label {
 				color: $white;
 				font-family: $display-font;
-				font-size: 0.7em;
-				letter-spacing: 0.07em;
+				font-size: 0.7rem;
+				letter-spacing: 0.07rem;
 				text-transform: uppercase;
 			}
 
@@ -44,7 +45,7 @@ section.contact {
 
 			textarea {
 				resize: vertical;
-				height: 4em;
+				height: 4rem;
 			}
 		}
 
@@ -54,9 +55,9 @@ section.contact {
 			color: $white;
 			cursor: pointer;
 			font-family: $display-font;
-			font-size: 0.9em;
-			letter-spacing: 0.07em;
-			padding: 9px 15px;
+			font-size: 0.9rem;
+			letter-spacing: 0.07rem;
+			padding: 9px 0.5rem;
 			text-transform: uppercase;
 			transition: all 0.3s;
 

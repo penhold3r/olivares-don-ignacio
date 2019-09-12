@@ -1,0 +1,30 @@
+.history {
+	&__content {
+		background: $white;
+		padding: 6rem 1rem 9rem;
+
+		.content-block {
+			background: $light-color;
+			padding: 2rem 2rem 6rem;
+			position: relative;
+			margin: 0 auto;
+			max-width: 800px;
+
+			p {
+				line-height: 1.75;
+				letter-spacing: 0.05rem;
+				text-align: center;
+			}
+
+			.olive-icon {
+				bottom: 1rem;
+				display: inline-block;
+				left: 0;
+				margin: 1rem auto;
+				position: absolute;
+				right: 0;
+				width: 100px;
+			}
+		}
+	}
+}

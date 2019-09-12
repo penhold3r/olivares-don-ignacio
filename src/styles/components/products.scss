@@ -1,14 +1,15 @@
 section.products {
-	padding: 30px 0 0;
+	padding: 1rem 0 0;
 	position: relative;
 
 	.prods-title {
 		border-bottom: 3px solid $main-color;
 		color: $main-color;
 		font-family: $display-font;
-		letter-spacing: 0.05em;
-		margin: 0 auto 30px;
-		padding-bottom: 15px;
+		font-weight: normal;
+		letter-spacing: 0.075rem;
+		margin: 0 auto 1rem;
+		padding-bottom: 0.5rem;
 		text-align: center;
 		text-transform: uppercase;
 		width: fit-content;
@@ -16,11 +17,11 @@ section.products {
 
 	.prods-list {
 		background: no-repeat center center / cover;
-		padding: 60px 30px;
+		padding: 60px 1rem;
 
 		.prods-grid {
 			display: grid;
-			grid-gap: 15px;
+			grid-gap: 0.5rem;
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 			margin: 0 auto;
 			max-width: 700px;
@@ -28,7 +29,7 @@ section.products {
 			.prod-card {
 				background: $white;
 				cursor: pointer;
-				padding: 15px;
+				padding: 0.5rem;
 				position: relative;
 				overflow: hidden;
 
@@ -42,10 +43,10 @@ section.products {
 
 				.prod-name {
 					color: $main-color;
-					font-size: 1.25em;
+					font-size: 1.25rem;
 					margin: 0;
 					text-align: center;
-					padding: 15px 0 0;
+					padding: 0.5rem 0 0;
 				}
 
 				.prod-details {
@@ -54,7 +55,7 @@ section.products {
 					height: 100%;
 					left: 0;
 					opacity: 0;
-					padding: 15px;
+					padding: 0.5rem;
 					position: absolute;
 					top: 50%;
 					transition: all 0.4s;

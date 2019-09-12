@@ -1,31 +1,56 @@
 import React from 'react'
-//import { Link } from 'gatsby'
+import { Parallax } from 'react-parallax'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
+
+import oliveHero from '../images/don_ignacio-olivares.jpg'
 
 const OlivesPage = () => (
 	<Layout title="Olivares">
-		<h1>Olivares</h1>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cumque magni, est
-			praesentium ex in cum sed natus labore eos vel harum sunt rem, incidunt commodi! Non eius
-			aliquid laudantium, deserunt recusandae ut mollitia quos? Vel dolor, voluptatibus placeat
-			in rerum laudantium magnam. Dolore, eos impedit minus temporibus saepe omnis pariatur
-			quibusdam inventore deserunt amet quae sed tempore deleniti provident, perspiciatis facilis
-			incidunt laudantium sequi architecto repudiandae consectetur similique! Amet iste ratione
-			dolorem dignissimos itaque molestiae rerum nostrum sequi, vero cumque illo voluptates,
-			provident est tenetur iure minima ullam! Eius necessitatibus magni vel dolore consequuntur.
-			Necessitatibus quia magni, fugit enim quasi asperiores eligendi culpa inventore animi
-			corporis sed adipisci repellat dignissimos sequi ratione! Fugit adipisci obcaecati ut
-			officiis! Cupiditate delectus voluptatibus odit explicabo esse et, eius modi eveniet,
-			quaerat, eligendi ducimus. Magnam explicabo necessitatibus incidunt cum aliquid nostrum
-			perspiciatis officiis voluptatum ullam cupiditate, soluta fuga earum! Culpa architecto
-			molestias vel odit provident alias, et assumenda distinctio eveniet, sunt incidunt
-			excepturi placeat voluptate sed rem. Consectetur facilis ullam officia magnam quasi debitis
-			molestiae ex quisquam fuga similique ipsum ducimus nostrum saepe tenetur necessitatibus
-			repellendus unde nulla cumque hic cum, placeat doloribus qui? Consequuntur laudantium qui,
-			reprehenderit quasi eum suscipit voluptate illo?
-		</p>
+		<section className="page olive">
+			<header className="olive__header page-header">
+				<Parallax
+					className="page-hero"
+					bgImage={oliveHero}
+					strength={400}
+					style={{ height: '100%', width: '100%' }}
+				>
+					<h2 className="olive-title page-title">Olivares</h2>
+				</Parallax>
+			</header>
+			<div className="olive__content">
+				<div className="olive-block">
+					<h3 className="olive-block__title">Terroir</h3>
+					<p>
+						Olivares de Don Ignacio cuenta con 56 has, con las condiciones ideales para el
+						cultivo de olivos en el departamento de Rivadavia, al este de la provincia de
+						Mendoza, su suelo arenoso, regado con agua de máxima pureza resultado del deshielo
+						de las altas cumbres de la cordillera de Los Andes, el agua es capaz de recorrer
+						perfectamente la tierra, con bajas concentraciones de material orgánico, lo cual
+						produce un estrés muy favorable en cada uno de nuestros olivos.
+					</p>
+				</div>
+				<div className="olive-block">
+					<h3 className="olive-block__title">Clima</h3>
+					<p>
+						Las fincas ubicadas al pie de la cordillera de Los Andes, irrigadas con agua de
+						deshielo, con un clima arido de planicie y sierras, temperaturas media anual de
+						15° C y escasas lluvias y una atmosfera de gran luminosidad, una altura de 659
+						m.s.n.m. y gracias a su ubicación, gozan de un clima ideal y amplitud térmica,
+						permitiendo el excelente desarrollo de la actividad olivícola.
+					</p>
+				</div>
+				<div className="olive-block">
+					<h3 className="olive-block__title">Olivares</h3>
+					<p>
+						Nuestros olivares están formados por arboles de un solo tronco, en su mayoría
+						plantados en el sistema tradicional y con mas de 70 años de vida, las nuevas
+						plantaciones se implantaron bajo sistemas modernos de cultivo, las variedades de
+						aceitunas cultivadas son: Arauco, Farga, arbequina, manzanilla y frantollo.
+					</p>
+				</div>
+			</div>
+		</section>
 	</Layout>
 )
 

@@ -1,26 +1,43 @@
 import React from 'react'
-//import { Link } from 'gatsby'
+import { Parallax } from 'react-parallax'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
+
+import historyHero from '../images/don_ignacio-historia.jpg'
+import olive from '../images/olive.svg'
 
 const HistoryPage = () => (
 	<Layout title="Historia">
-		<h1>Historia</h1>
-		<p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum error asperiores quos?
-			Explicabo ab totam omnis, sunt sed repudiandae laudantium, vel optio quo sapiente eius iste
-			ipsam, mollitia eveniet deserunt facere esse provident sequi! Eveniet eum earum dignissimos
-			cupiditate asperiores neque ad excepturi perspiciatis unde numquam? Ea quam excepturi
-			obcaecati perspiciatis. Dolore voluptate dignissimos aliquam similique minima at maxime sed
-			officiis eos deserunt vitae quaerat, nesciunt itaque sunt ipsam et nam molestias laborum
-			id, consequatur delectus quisquam? Vero voluptatibus neque suscipit enim earum cum animi
-			sequi. Vero officiis placeat commodi voluptatum, facilis culpa illo numquam soluta atque,
-			quasi sunt in aliquam a reiciendis provident nam dicta eveniet impedit possimus neque cum
-			dignissimos aut! Porro, quo, corporis incidunt culpa aperiam omnis earum quisquam mollitia
-			maiores asperiores eum iste pariatur nam rem? Ullam modi perferendis, praesentium tempore
-			error libero in tempora consequuntur numquam explicabo, nobis officiis deserunt iure
-			distinctio eum corporis saepe?
-		</p>
+		<section className="page history">
+			<header className="history__header page-header">
+				<Parallax
+					className="page-hero"
+					bgImage={historyHero}
+					strength={400}
+					style={{ height: '100%', width: '100%' }}
+				>
+					<h2 className="history-title page-title">Historia</h2>
+				</Parallax>
+			</header>
+			<div className="history__content">
+				<div className="content-block">
+					<p>
+						Olivares de Don Ignacio, fundada en 1946, en el departamento Rivadavia en la
+						Provincia de Mendoza. A partir de ese momento su pasión es la producción de aceite
+						de oliva de calidad superior, la familia y su equipo han trabajado incansablemente
+						para construir un establecimiento de última generación que actualmente es sinónimo
+						de calidad. Su principal objetivo fue combinar las técnicas de elaboración de
+						aceite de oliva, con el clima y terroir excepcionales de la región. Olivares de
+						Don Ignacio orientó su producción a los mercados internacionales, experimentando
+						un gran crecimiento, con presencia en todo el mundo, se ha constituido en líder de
+						exportación del segmento de Aceites de Oliva, Extra Virgen, Kosher y Orgánicos
+						Premium, cosechando numerosos reconocimientos y excelentes puntuaciones por parte
+						de los más prestigiosos organismos y medios internacionales.
+					</p>
+					<img className="olive-icon" src={olive} alt="" />
+				</div>
+			</div>
+		</section>
 	</Layout>
 )
 

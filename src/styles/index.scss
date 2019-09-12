@@ -1,4 +1,4 @@
-@import './pressets/*.scss';
+@import './includes/*.scss';
 
 *,
 *:after,
@@ -14,8 +14,58 @@ body {
 	background: $light-color;
 	color: $dark-color;
 	font-family: $main-font;
-	font-size: 16px;
 	scroll-behavior: smooth;
+
+	.page {
+		animation: fadeIn 0.4s linear forwards;
+		opacity: 0;
+	}
+
+	.page-header {
+		display: flex;
+		height: 300px;
+		position: relative;
+
+		.page-hero {
+			background-color: $main-color;
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+
+			.react-parallax-bgimage {
+				mix-blend-mode: darken;
+			}
+
+			.react-parallax-content {
+				display: flex;
+				height: 100%;
+			}
+		}
+
+		.page-title {
+			color: $white;
+			text-shadow: 0 3px 3px $dark-color;
+			font-family: $display-font;
+			font-size: 2.5rem;
+			font-weight: normal;
+			letter-spacing: 0.5rem;
+			margin: auto;
+			position: relative;
+			text-align: center;
+			text-transform: uppercase;
+			z-index: 2;
+		}
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @import './components/*.scss';
