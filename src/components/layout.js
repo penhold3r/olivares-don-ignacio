@@ -32,10 +32,6 @@ const Layout = ({ title, children }) => (
 						title={pageTitle}
 						meta={[
 							{
-								property: 'og:image',
-								content: 'bookmark'
-							},
-							{
 								name: 'description',
 								content: site.siteMetadata.description
 							},
