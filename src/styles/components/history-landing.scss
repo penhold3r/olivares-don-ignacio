@@ -26,12 +26,11 @@ section.history-landing {
 	}
 
 	.content {
+		background: no-repeat center center / contain;
 		display: flex;
 		flex-direction: column;
 		margin: 1rem auto;
-		max-width: calc($max-width + 1rem);
-		padding: 0.5rem;
-		background: no-repeat center center / contain;
+		max-width: calc(#{$max-width} + 1rem);
 		padding: 90px 0.5rem;
 
 		p {
