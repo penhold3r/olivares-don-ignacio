@@ -13,7 +13,8 @@
 		"build": "gatsby build",
 		"develop": "gatsby develop",
 		"start": "npm run develop",
-		"serve": "gatsby serve"
+		"serve": "gatsby serve",
+		"heroku-postbuild": "gatsby build"
 	},
 	"dependencies": {
 		"gatsby": "^2.15.14",
