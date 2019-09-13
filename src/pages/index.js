@@ -23,7 +23,7 @@ const IndexPage = ({ location }) => {
 				behavior: 'smooth',
 				top: document.querySelector('#productos').offsetTop - 100
 			})
-	}, [])
+	}, [location])
 
 	return (
 		<Layout>
