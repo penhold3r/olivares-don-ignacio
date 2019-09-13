@@ -69,4 +69,4 @@ yarn-error.log
 .yarn-integrity
 
 #heroku
-package-lock.json
+#package-lock.json
