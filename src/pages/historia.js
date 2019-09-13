@@ -1,10 +1,10 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
 
-import Layout from '../components/Layout'
-
 import historyHero from '../images/don_ignacio-historia.jpg'
 import olive from '../images/olive.svg'
+
+import Layout from '../components/Layout'
 
 const HistoryPage = () => (
 	<Layout title="Historia">

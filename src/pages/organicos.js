@@ -1,14 +1,14 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
 
-import Layout from '../components/Layout'
-
 import organicHero from '../images/don_ignacio-organico.jpg'
 
 import organicoArgentina from '../images/organico-argentina.svg'
 import USDAOrganic from '../images/USDA-organic.svg'
 import uKosher from '../images/u-kosher.svg'
 import tacc from '../images/t.a.c.c.svg'
+
+import Layout from '../components/Layout'
 
 const OrganicPage = () => {
 	return (

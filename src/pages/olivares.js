@@ -1,9 +1,9 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
 
-import Layout from '../components/Layout'
-
 import oliveHero from '../images/don_ignacio-olivares.jpg'
+
+import Layout from '../components/Layout'
 
 const OlivesPage = () => (
 	<Layout title="Olivares">
