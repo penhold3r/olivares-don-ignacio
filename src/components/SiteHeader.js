@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { SmartLink as Link } from './SmartLink'
+import SmartLink from './SmartLink'
 import { Link as ScrollLink } from 'react-scroll'
 
 import logo from '../images/olivares_don_ignacio-logo.svg'
@@ -16,9 +16,9 @@ const SiteHeader = () => {
 				Productos
 			</ScrollLink>
 		) : (
-			<Link to="/" state={{ toScroll: 'productos' }}>
+			<SmartLink to="/" state={{ toScroll: 'productos' }}>
 				Productos
-			</Link>
+			</SmartLink>
 		)
 
 	useEffect(() => {
@@ -31,35 +31,35 @@ const SiteHeader = () => {
 			<div className="inner-header">
 				<div className="top-bar">
 					<div className="social">
-						<Link to="https://facebook.com" title="Facebook" className="social-link">
+						<SmartLink to="https://facebook.com" title="Facebook" className="social-link">
 							<img src={facebook} alt="f" />
-						</Link>
-						<Link to="https://twitter.com" title="Twitter" className="social-link">
+						</SmartLink>
+						<SmartLink to="https://twitter.com" title="Twitter" className="social-link">
 							<img src={twitter} alt="t" />
-						</Link>
-						<Link to="https://instagram.com" title="Instagram" className="social-link">
+						</SmartLink>
+						<SmartLink to="https://instagram.com" title="Instagram" className="social-link">
 							<img src={instagram} alt="ig" />
-						</Link>
+						</SmartLink>
 					</div>
 				</div>
 				<h1 className="logo">
-					<Link to="/">
+					<SmartLink to="/">
 						<img src={logo} alt="Olivares de Don Ignacio" />
-					</Link>
+					</SmartLink>
 				</h1>
 				<nav className="main-nav">
 					<ul className="nav-list">
 						<li className="nav-item">
-							<Link to="/">Inicio</Link>
+							<SmartLink to="/">Inicio</SmartLink>
 						</li>
 						<li className="nav-item">
-							<Link to="/historia">Historia</Link>
+							<SmartLink to="/historia">Historia</SmartLink>
 						</li>
 						<li className="nav-item">
-							<Link to="/olivares">Olivares</Link>
+							<SmartLink to="/olivares">Olivares</SmartLink>
 						</li>
 						<li className="nav-item">
-							<Link to="/organicos">Orgánicos</Link>
+							<SmartLink to="/organicos">Orgánicos</SmartLink>
 						</li>
 						<li className="nav-item">{prodLink}</li>
 						<li className="nav-item">
