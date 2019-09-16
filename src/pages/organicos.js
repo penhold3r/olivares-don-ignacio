@@ -8,11 +8,11 @@ import USDAOrganic from '../images/USDA-organic.svg'
 import uKosher from '../images/u-kosher.svg'
 import tacc from '../images/t.a.c.c.svg'
 
-import Layout from '../components/Layout'
+import Wrapper from '../components/Wrapper'
 
 const OrganicPage = () => {
 	return (
-		<Layout title="Prácticas Orgánicas">
+		<Wrapper title="Prácticas Orgánicas">
 			<section className="page organic">
 				<header className="organic__header page-header">
 					<Parallax
@@ -63,7 +63,7 @@ const OrganicPage = () => {
 					</div>
 				</div>
 			</section>
-		</Layout>
+		</Wrapper>
 	)
 }
 

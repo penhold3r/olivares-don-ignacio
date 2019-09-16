@@ -10,7 +10,7 @@ import '../styles/index.scss'
 
 import favicon from '../images/favicon.ico'
 
-const Layout = ({ title, children }) => (
+const Wrapper = ({ title, children }) => (
 	<StaticQuery
 		query={graphql`
 			query SiteTitleQuery {
@@ -56,4 +56,4 @@ const Layout = ({ title, children }) => (
 	/>
 )
 
-export default Layout
+export default Wrapper

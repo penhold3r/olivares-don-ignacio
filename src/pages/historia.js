@@ -4,10 +4,10 @@ import { Parallax } from 'react-parallax'
 import historyHero from '../images/don_ignacio-historia.jpg'
 import olive from '../images/olive.svg'
 
-import Layout from '../components/Layout'
+import Wrapper from '../components/Wrapper'
 
 const HistoryPage = () => (
-	<Layout title="Historia">
+	<Wrapper title="Historia">
 		<section className="page history">
 			<header className="history__header page-header">
 				<Parallax
@@ -38,7 +38,7 @@ const HistoryPage = () => (
 				</div>
 			</div>
 		</section>
-	</Layout>
+	</Wrapper>
 )
 
 export default HistoryPage

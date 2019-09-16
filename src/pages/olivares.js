@@ -3,10 +3,10 @@ import { Parallax } from 'react-parallax'
 
 import oliveHero from '../images/don_ignacio-olivares.jpg'
 
-import Layout from '../components/Layout'
+import Wrapper from '../components/Wrapper'
 
 const OlivesPage = () => (
-	<Layout title="Olivares">
+	<Wrapper title="Olivares">
 		<section className="page olive">
 			<header className="olive__header page-header">
 				<Parallax
@@ -51,7 +51,7 @@ const OlivesPage = () => (
 				</div>
 			</div>
 		</section>
-	</Layout>
+	</Wrapper>
 )
 
 export default OlivesPage

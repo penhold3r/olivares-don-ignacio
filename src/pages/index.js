@@ -7,7 +7,7 @@ import oliveShape from '../images/olive.gif'
 import oliveTree from '../images/products_bg.jpg'
 
 import Foo from '../components/Foo'
-import Layout from '../components/Layout'
+import Wrapper from '../components/Wrapper'
 
 import products from '../data/products'
 
@@ -27,7 +27,7 @@ const IndexPage = ({ location }) => {
 	}, [location])
 
 	return (
-		<Layout>
+		<Wrapper>
 			<div className="page">
 				<section className="hero">
 					<Parallax bgImage={hero} strength={400} style={{ height: '100%' }}>
@@ -76,7 +76,7 @@ const IndexPage = ({ location }) => {
 				</section>
 				<Foo></Foo>
 			</div>
-		</Layout>
+		</Wrapper>
 	)
 }
 
