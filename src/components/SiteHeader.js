@@ -7,7 +7,7 @@ import facebook from '../images/facebook.svg'
 import twitter from '../images/twitter.svg'
 import instagram from '../images/instagram.svg'
 
-const Header = () => {
+const SiteHeader = () => {
 	const [pathname, setPathname] = useState('')
 
 	const prodLink =
@@ -74,4 +74,4 @@ const Header = () => {
 	)
 }
 
-export default Header
+export default SiteHeader

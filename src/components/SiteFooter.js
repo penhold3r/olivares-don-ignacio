@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+const SiteFooter = () => {
 	return (
 		<>
 			<section className="contact" id="contacto">
@@ -31,4 +31,4 @@ const Footer = () => {
 	)
 }
 
-export default Footer
+export default SiteFooter

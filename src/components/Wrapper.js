@@ -2,8 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './Header'
-import Footer from './Footer'
+import SiteHeader from './SiteHeader'
+import SiteFooter from './SiteFooter'
 
 import 'sanitize.css'
 import '../styles/index.scss'
@@ -47,9 +47,9 @@ const Wrapper = ({ title, children }) => (
 							}
 						]}
 					/>
-					<Header />
+					<SiteHeader />
 					<main>{children}</main>
-					<Footer />
+					<SiteFooter />
 				</>
 			)
 		}}
