@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link as GatsbyLink } from 'gatsby'
 
-const Link = ({ children, to, activeClassName, ...other }) => {
+const SmartLink = ({ children, to, activeClassName, ...other }) => {
 	const internal = /^\/(?!\/)/.test(to)
 
 	return internal ? (
@@ -15,4 +15,4 @@ const Link = ({ children, to, activeClassName, ...other }) => {
 	)
 }
 
-export default Link
+export default SmartLink

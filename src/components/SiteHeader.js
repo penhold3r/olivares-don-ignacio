@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Link from './Link'
+import { SmartLink as Link } from './SmartLink'
 import { Link as ScrollLink } from 'react-scroll'
 
 import logo from '../images/olivares_don_ignacio-logo.svg'
