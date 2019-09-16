@@ -6,7 +6,6 @@ import hero from '../images/header.jpg'
 import oliveShape from '../images/olive.gif'
 import oliveTree from '../images/products_bg.jpg'
 
-import Foo from '../components/Foo'
 import Wrapper from '../components/Wrapper'
 
 import products from '../data/products'
@@ -74,7 +73,6 @@ const IndexPage = ({ location }) => {
 						</div>
 					</div>
 				</section>
-				<Foo></Foo>
 			</div>
 		</Wrapper>
 	)
