@@ -1,6 +1,8 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
 
+import Wrapper from '../components/Wrapper'
+
 import organicHero from '../images/don_ignacio-organico.jpg'
 
 import organicoArgentina from '../images/organico-argentina.svg'
@@ -8,7 +10,7 @@ import USDAOrganic from '../images/USDA-organic.svg'
 import uKosher from '../images/u-kosher.svg'
 import tacc from '../images/t.a.c.c.svg'
 
-import Wrapper from '../components/Wrapper'
+import branchesBg from '../images/olive-branches-bg.svg'
 
 const OrganicPage = () => {
 	return (
@@ -24,7 +26,7 @@ const OrganicPage = () => {
 						<h2 className="organic-title page-title">Prácticas Orgánicas</h2>
 					</Parallax>
 				</header>
-				<div className="organic__content">
+				<div className="organic__content" style={{ backgroundImage: `url(${branchesBg})` }}>
 					<ul className="practices">
 						<li className="practices__block">
 							<p>No se utilizan productos de síntesis química.</p>

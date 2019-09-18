@@ -8,7 +8,9 @@ import SiteFooter from './SiteFooter'
 import 'sanitize.css'
 import '../styles/index.scss'
 
-import favicon from '../images/favicon.ico'
+import opengraph from '../images/olivares-og.png'
+import faviconICO from '../images/favicon.ico'
+import faviconPNG from '../images/favicon.png'
 
 const Wrapper = ({ title, children }) => (
 	<StaticQuery
@@ -31,19 +33,65 @@ const Wrapper = ({ title, children }) => (
 						title={pageTitle}
 						meta={[
 							{
+								property: 'og:image',
+								content: opengraph
+							},
+							{
+								name: 'twitter:image',
+								content: opengraph
+							},
+							{
 								name: 'description',
 								content: site.siteMetadata.description
 							},
 							{
+								property: 'og:description',
+								content: site.siteMetadata.description
+							},
+							{
+								name: 'twitter:description',
+								content: site.siteMetadata.description
+							},
+							{
+								property: 'og:title',
+								content: pageTitle
+							},
+							{
+								name: 'twitter:title',
+								content: pageTitle
+							},
+							{
+								property: 'og:url',
+								content: 'https://olivares-don-ignacio.com/'
+							},
+							{
+								name: 'twitter:site',
+								content: 'https://olivares-don-ignacio.com/'
+							},
+							{
+								property: 'og:type',
+								content: 'Website'
+							},
+							{
+								name: 'twitter:card',
+								content: 'summary_large_image'
+							},
+							{
 								name: 'keywords',
-								content: 'aceite aceites oliva olivares olivícola mendoza'
+								content: 'oliva, olivares, aceite de oliva, gourmet, mendoza'
 							}
 						]}
 						link={[
 							{
-								href: favicon,
+								href: faviconICO,
 								rel: 'shortcut icon',
 								type: 'image/x-icon'
+							},
+							{
+								href: faviconPNG,
+								rel: 'shortcut icon',
+								type: 'image/png',
+								sizes: '32x32 192x192'
 							}
 						]}
 					/>

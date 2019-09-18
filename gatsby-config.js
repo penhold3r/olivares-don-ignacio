@@ -34,7 +34,8 @@ module.exports = {
 				theme_color: `#7f8571`,
 				display: `standalone`,
 				orientation: 'portrait',
-				icon: `src/images/olivares-icon.png` // This path is relative to the root of the site.
+				icon: `src/images/olivares-icon.png`, // This path is relative to the root of the site.
+				purpose: 'maskable any'
 			}
 		},
 		`gatsby-plugin-offline`

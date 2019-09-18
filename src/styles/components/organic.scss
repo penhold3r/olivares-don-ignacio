@@ -1,6 +1,10 @@
 .organic {
 	&__content {
-		background: $main-gradient;
+		background-color: $dark-color;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: multiply;
+		background-attachment: fixed;
 		padding: 3rem 1rem;
 
 		.practices {

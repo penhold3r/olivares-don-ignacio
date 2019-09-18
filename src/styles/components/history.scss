@@ -1,7 +1,10 @@
 .history {
 	&__content {
 		background: $white;
+		background-repeat: no-repeat;
+		background-size: cover;
 		padding: 6rem 1rem 9rem;
+		background-attachment: fixed;
 
 		.content-block {
 			background: $light-color;

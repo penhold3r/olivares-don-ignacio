@@ -6,6 +6,8 @@ import olive from '../images/olive.svg'
 
 import Wrapper from '../components/Wrapper'
 
+import branchesBg from '../images/olive-branches-bg.svg'
+
 const HistoryPage = () => {
 	return (
 		<Wrapper title="Historia">
@@ -20,7 +22,7 @@ const HistoryPage = () => {
 						<h2 className="history-title page-title">Historia</h2>
 					</Parallax>
 				</header>
-				<div className="history__content">
+				<div className="history__content" style={{ backgroundImage: `url(${branchesBg})` }}>
 					<div className="content-block">
 						<p>
 							Olivares de Don Ignacio, fundada en 1946, en el departamento Rivadavia en la
