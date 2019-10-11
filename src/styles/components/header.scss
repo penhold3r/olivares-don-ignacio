@@ -1,32 +1,28 @@
 .site-header {
 	background: $light-color;
-	position: sticky;
-	top: 0;
 	z-index: 99;
-	overflow-x: hidden;
 
-	.inner-header {
-		display: grid;
-		grid-template-columns: 175px 1fr;
-		max-width: $max-width;
-		margin: 0 auto;
+	@include tablet {
+		position: fixed;
 		width: 100%;
-		padding: 2rem 0 0;
+		height: 60px;
+	}
 
-		.top-bar {
-			background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.7));
+	.top-bar {
+		background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.7));
+		height: 2rem;
+		padding: 0 1rem;
+		width: 100%;
+
+		@include tablet {
+			display: none;
+		}
+
+		&__inner {
 			display: flex;
-			height: 2rem;
 			justify-content: flex-end;
-			left: 0;
-			padding: 0 1rem;
-			position: absolute;
-			top: 0;
-			width: 100vw;
-
-			@include tablet {
-				display: none;
-			}
+			margin: 0 auto;
+			width: $max-width;
 
 			.social {
 				display: flex;
@@ -52,10 +48,75 @@
 				}
 			}
 		}
+	}
+
+	.inner-header {
+		display: grid;
+		grid-template-columns: 175px 1fr;
+		max-width: $max-width;
+		margin: 0 auto;
+		position: sticky;
+		overflow-x: hidden;
+		top: 0;
+		z-index: 98;
 
 		.logo {
 			margin: 0;
 			padding: 0.5rem;
+
+			@include tablet {
+				width: 150px;
+				padding: 0 0.5rem 0.5rem;
+			}
+		}
+
+		.hamb-menu {
+			display: none;
+
+			@include tablet {
+				display: flex;
+				height: 45px;
+				width: 51px;
+				padding: 15px;
+				align-self: center;
+				justify-self: end;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+
+				.menu-bar {
+					background: $dark-color;
+					height: 3px;
+					width: 100%;
+					transition: all 0.3s;
+
+					&:first-child {
+						margin: 0 0 auto;
+					}
+
+					&:last-child {
+						margin: auto 0 0;
+					}
+				}
+
+				&.crossed {
+					.menu-bar {
+						&:first-child {
+							margin: 0 0 auto;
+							transform: rotate(-45deg) translate(-3px, 6px);
+						}
+
+						&:nth-child(2) {
+							opacity: 0;
+						}
+
+						&:last-child {
+							margin: auto 0 0;
+							transform: rotate(45deg) translate(-3px, -6px);
+						}
+					}
+				}
+			}
 		}
 
 		.main-nav {
@@ -65,7 +126,47 @@
 			padding: 0 0.5rem;
 
 			@include tablet {
-				display: none;
+				position: fixed;
+				background: $light-color;
+				right: -361px;
+				width: 360px;
+				height: 100vh;
+				top: 59px;
+				transition: all 0.3s;
+
+				.nav-list {
+					flex-direction: column;
+					margin: 2rem auto auto !important;
+					width: 280px;
+
+					.nav-item {
+						a {
+							display: block;
+						}
+					}
+				}
+
+				&:after {
+					content: '';
+					background: rgba($dark-color, 0.7);
+					position: absolute;
+					height: 100%;
+					width: 100vw;
+					pointer-events: none;
+					right: 100%;
+					top: 0;
+					opacity: 0;
+					transition: opacity 0.3s;
+				}
+
+				&.open {
+					right: 0;
+
+					&:after {
+						pointer-events: all;
+						opacity: 1;
+					}
+				}
 			}
 
 			.nav-list {

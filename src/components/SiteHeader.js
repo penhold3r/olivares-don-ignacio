@@ -9,6 +9,7 @@ import instagram from '../images/instagram.svg'
 
 const SiteHeader = () => {
 	const [pathname, setPathname] = useState('')
+	const [menuOpen, setMenuOpen] = useState(false)
 
 	const prodLink =
 		pathname === '/' ? (
@@ -21,6 +22,11 @@ const SiteHeader = () => {
 			</SmartLink>
 		)
 
+	const toggleMenu = () => {
+		setMenuOpen(!menuOpen)
+		console.log('huhihu')
+	}
+
 	useEffect(() => {
 		console.log(window.location.pathname)
 		setPathname(window.location.pathname)
@@ -28,8 +34,8 @@ const SiteHeader = () => {
 
 	return (
 		<header className="site-header">
-			<div className="inner-header">
-				<div className="top-bar">
+			<div className="top-bar">
+				<div className="top-bar__inner">
 					<div className="social">
 						<SmartLink to="https://facebook.com" title="Facebook" className="social-link">
 							<img src={facebook} alt="f" />
@@ -42,27 +48,41 @@ const SiteHeader = () => {
 						</SmartLink>
 					</div>
 				</div>
+			</div>
+			<div className="inner-header">
 				<h1 className="logo">
 					<SmartLink to="/">
 						<img src={logo} alt="Olivares de Don Ignacio" />
 					</SmartLink>
 				</h1>
-				<nav className="main-nav">
+
+				<div
+					className={menuOpen ? 'hamb-menu crossed' : 'hamb-menu'}
+					onClick={() => toggleMenu()}
+				>
+					<div className="menu-bar"></div>
+					<div className="menu-bar"></div>
+					<div className="menu-bar"></div>
+				</div>
+
+				<nav className={menuOpen ? 'main-nav open' : 'main-nav'}>
 					<ul className="nav-list">
-						<li className="nav-item">
+						<li className="nav-item" onClick={() => toggleMenu()}>
 							<SmartLink to="/">Inicio</SmartLink>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item" onClick={() => toggleMenu()}>
 							<SmartLink to="/historia">Historia</SmartLink>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item" onClick={() => toggleMenu()}>
 							<SmartLink to="/olivares">Olivares</SmartLink>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item" onClick={() => toggleMenu()}>
 							<SmartLink to="/organicos">Orgánicos</SmartLink>
 						</li>
-						<li className="nav-item">{prodLink}</li>
-						<li className="nav-item">
+						<li className="nav-item" onClick={() => toggleMenu()}>
+							{prodLink}
+						</li>
+						<li className="nav-item" onClick={() => console.log('ctct')}>
 							<ScrollLink to="contacto" duration={500} smooth={true}>
 								Contacto
 							</ScrollLink>

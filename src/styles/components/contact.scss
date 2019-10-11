@@ -16,53 +16,95 @@ section.contact {
 		width: fit-content;
 	}
 
-	.contact-form {
+	.contact-content {
 		display: flex;
-		flex-direction: column;
+		max-width: 870px;
+		flex-wrap: wrap;
 		margin: 0 auto;
-		max-width: 400px;
-		position: relative;
 
-		.form-field {
-			position: relative;
-			margin: 0 0 0.5rem;
+		.contact-info {
+			padding-right: 2rem;
+			width: 50%;
 
-			label {
-				color: $white;
-				font-family: $display-font;
-				font-size: 0.7rem;
-				letter-spacing: 0.07rem;
-				text-transform: uppercase;
-			}
-
-			input,
-			textarea {
-				background: $white;
-				border: none;
-				padding: 3px 6px;
+			@include tablet {
+				padding: 1rem;
+				text-align: center;
 				width: 100%;
 			}
 
-			textarea {
-				resize: vertical;
-				height: 4rem;
+			p {
+				color: $white;
+				font-family: $display-font;
+
+				a {
+					color: rgba($light-color, 0.8);
+
+					&:hover {
+						color: $white;
+					}
+				}
 			}
 		}
 
-		.submit {
-			background: $dark-color;
-			border: none;
-			color: $white;
-			cursor: pointer;
-			font-family: $display-font;
-			font-size: 0.9rem;
-			letter-spacing: 0.07rem;
-			padding: 9px 0.5rem;
-			text-transform: uppercase;
-			transition: all 0.3s;
+		.contact-form {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			width: 50%;
 
-			&:hover {
-				background: $main-color;
+			@include tablet {
+				width: 100%;
+				margin: 0 auto;
+				max-width: 480px;
+				padding: 0 1rem;
+			}
+
+			.form-field {
+				position: relative;
+				margin: 0 0 0.5rem;
+
+				label {
+					color: $light-color;
+					font-family: $display-font;
+					font-size: 0.7rem;
+					letter-spacing: 0.07rem;
+					text-transform: uppercase;
+				}
+
+				input,
+				textarea {
+					background: $light-color;
+					border: none;
+					padding: 9px 12px;
+					width: 100%;
+					transition: all 0.3s;
+
+					&:focus {
+						background: $white;
+					}
+				}
+
+				textarea {
+					resize: vertical;
+					height: 4rem;
+				}
+			}
+
+			.submit {
+				background: $dark-color;
+				border: none;
+				color: $white;
+				cursor: pointer;
+				font-family: $display-font;
+				font-size: 0.9rem;
+				letter-spacing: 0.07rem;
+				padding: 9px 0.5rem;
+				text-transform: uppercase;
+				transition: all 0.3s;
+
+				&:hover {
+					background: $main-color;
+				}
 			}
 		}
 	}
