@@ -4,7 +4,7 @@ section.contact {
 	position: relative;
 
 	h2 {
-		border-bottom: 3px solid $white;
+		border-bottom: 3px solid $accent-color;
 		color: $white;
 		font-family: $display-font;
 		font-weight: normal;
@@ -23,7 +23,7 @@ section.contact {
 		margin: 0 auto;
 
 		.contact-info {
-			padding-right: 2rem;
+			padding: 0.5rem 2rem 0.5rem 0;
 			width: 50%;
 
 			@include tablet {
@@ -32,15 +32,26 @@ section.contact {
 				width: 100%;
 			}
 
-			p {
-				color: $white;
-				font-family: $display-font;
+			.contact-block {
+				display: flex;
+				margin: 0 0 1rem;
+				align-items: center;
 
-				a {
-					color: rgba($light-color, 0.8);
+				.fa {
+					color: $accent-color;
+				}
 
-					&:hover {
-						color: $white;
+				p {
+					color: $white;
+					font-family: $display-font;
+					margin: 0 0 0 1rem;
+
+					a {
+						color: rgba($light-color, 0.8);
+
+						&:hover {
+							color: $white;
+						}
 					}
 				}
 			}
@@ -93,7 +104,7 @@ section.contact {
 			.submit {
 				background: $dark-color;
 				border: none;
-				color: $white;
+				color: $accent-color;
 				cursor: pointer;
 				font-family: $display-font;
 				font-size: 0.9rem;

@@ -1,13 +1,14 @@
 .history {
 	&__content {
 		background: $white;
+		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding: 6rem 1rem 9rem;
-		background-attachment: fixed;
 
 		.content-block {
 			background: $light-color;
+			border-bottom: 1px solid $accent-color;
 			padding: 2rem 2rem 6rem;
 			position: relative;
 			margin: 0 auto;
@@ -17,6 +18,10 @@
 				line-height: 1.75;
 				letter-spacing: 0.05rem;
 				text-align: center;
+
+				em {
+					color: $main-color;
+				}
 			}
 
 			.olive-icon {

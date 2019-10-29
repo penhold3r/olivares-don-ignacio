@@ -1,4 +1,5 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const SiteFooter = () => {
 	return (
@@ -7,13 +8,22 @@ const SiteFooter = () => {
 				<h2>Contacto</h2>
 				<div className="contact-content">
 					<div className="contact-info">
-						<p>Lorem Ipsum Dolor 123, Sit Amet.</p>
-						<p>
-							tel.: <a href="tel:123456789">123 456 789</a>
-						</p>
-						<p>
-							mail: <a href="mailto:info@olivares.com">info@olivares.com</a>
-						</p>
+						<div className="contact-block">
+							<FontAwesomeIcon className="fa" icon={['fas', 'home']} />
+							<p>Lorem Ipsum Dolor 123, Sit Amet.</p>
+						</div>
+						<div className="contact-block">
+							<FontAwesomeIcon className="fa" icon={['fas', 'phone-alt']} />
+							<p>
+								tel.: <a href="tel:123456789">123 456 789</a>
+							</p>
+						</div>
+						<div className="contact-block">
+							<FontAwesomeIcon className="fa" icon={['fas', 'envelope']} />
+							<p>
+								mail: <a href="mailto:info@olivares.com">info@olivares.com</a>
+							</p>
+						</div>
 					</div>
 					<form action="" className="contact-form">
 						<div className="form-field">

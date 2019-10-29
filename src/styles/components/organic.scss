@@ -18,7 +18,7 @@
 
 			&__block {
 				background: $main-color;
-				border: 0.25rem solid $white;
+				border: 1px solid $accent-color;
 				display: flex;
 				padding: 2rem 1.5rem;
 
@@ -36,17 +36,18 @@
 		.certifications {
 			display: flex;
 			justify-content: space-between;
-			max-width: 800px;
+			max-width: 600px;
 			margin: 4rem auto;
 
 			&__logo {
 				margin: 1rem;
-				width: 20%;
+				width: 15%;
 				max-width: 100px;
 			}
 		}
 
 		.description {
+			border-bottom: 1px solid $accent-color;
 			background: $light-color;
 			max-width: 800px;
 			margin: 0 auto 2rem;

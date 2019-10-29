@@ -31,7 +31,9 @@ const IndexPage = ({ location }) => {
 				<section className="hero">
 					<Parallax bgImage={hero} strength={400} style={{ height: '100%' }}>
 						<div className="tagline">
-							<h4>Desde 1946</h4>
+							<p className="text">
+								Más de 50 años de trayectoria brindando productos de calidad.
+							</p>
 						</div>
 					</Parallax>
 				</section>
@@ -63,7 +65,8 @@ const IndexPage = ({ location }) => {
 								products.map((prod, key) => (
 									<div key={key} className="prod-card">
 										<img src={prod.image} alt={`bottle of ${prod.name}`} />
-										<h4 className="prod-name">{prod.name}</h4>
+										<h4 className="prod-name">{prod.brand}</h4>
+										<p className="prod-variety">{prod.variety}</p>
 										<div className="prod-details">
 											<p className="prod-desc">{prod.desc}</p>
 											<p className="pack">{prod.qty}</p>

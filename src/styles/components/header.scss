@@ -1,9 +1,10 @@
 .site-header {
-	background: $light-color;
+	background: rgba($light-color, 0.8);
+	position: fixed;
 	z-index: 99;
+	width: 100vw;
 
 	@include tablet {
-		position: fixed;
 		width: 100%;
 		height: 60px;
 	}
@@ -12,7 +13,7 @@
 		background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.7));
 		height: 2rem;
 		padding: 0 1rem;
-		width: 100%;
+		width: 100vw;
 
 		@include tablet {
 			display: none;
@@ -22,19 +23,25 @@
 			display: flex;
 			justify-content: flex-end;
 			margin: 0 auto;
-			width: $max-width;
+			max-width: $max-width;
 
 			.social {
 				display: flex;
 				justify-content: space-between;
-				padding: 0 0.5rem;
+				padding: 0;
 				width: 129px;
 
 				.social-link {
+					color: $accent-color;
+					display: flex;
 					height: 2rem;
 					padding: 0 6px;
-					width: 2rem;
 					transition: all 0.3s;
+					width: 2rem;
+
+					svg {
+						margin: auto;
+					}
 
 					img {
 						height: 100%;
@@ -43,6 +50,7 @@
 					}
 
 					&:hover {
+						color: #fff;
 						opacity: 0.8;
 					}
 				}
@@ -179,19 +187,20 @@
 					padding: 0;
 
 					a {
-						border-bottom: 3px solid $main-color;
+						border-bottom: 1px solid transparent;
 						color: $main-color;
 						font-family: $display-font;
 						font-size: 0.8em;
 						letter-spacing: 0.075em;
-						padding: 6px 0;
+						padding: 6px 0 3px;
 						text-decoration: none;
 						text-transform: uppercase;
 						transition: all 0.3s;
 
 						&:hover {
 							color: $dark-color;
-							border-bottom: 3px solid $dark-color;
+							border-bottom: 1px solid $dark-color;
+							padding: 6px 0;
 						}
 					}
 				}

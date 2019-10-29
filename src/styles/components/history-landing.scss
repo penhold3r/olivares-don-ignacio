@@ -4,6 +4,7 @@ section.history-landing {
 	position: relative;
 
 	.history-intro {
+		display: none;
 		background: linear-gradient(45deg, $main-color, rgba($dark-color, 0.8));
 		margin: 4rem auto;
 		max-width: $max-width;
@@ -45,7 +46,7 @@ section.history-landing {
 		.history-link {
 			background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.8), $dark-color);
 			background-size: 200%;
-			color: $white;
+			color: $accent-color;
 			display: inline-block;
 			font-family: $display-font;
 			letter-spacing: 0.075rem;

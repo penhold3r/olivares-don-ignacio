@@ -54,13 +54,15 @@ const OrganicPage = () => {
 					<div className="description">
 						<h3 className="description__title">Productos Orgánicos</h3>
 						<p>
-							Olivares de Don Ignacio elabora aceites orgánicos premium, se elaboran con
-							aceitunas proveniente de olivares propios utilizando prácticas orgánicas y
-							procesadas en frio dentro de las 24 hs, de su cosecha, sin la necesidad de
-							utilizar pesticidas o ningún otro producto sintético. Las aceitunas se cosechan
-							en su punto justo, con una excelente maduración y calidad, su recolección
-							durante la cosecha, se realiza a mano y se inicia en el mes de Abril y culmina
-							en Julio.
+							<em>
+								Olivares de Don Ignacio elabora aceites orgánicos premium, se elaboran con
+								aceitunas proveniente de olivares propios utilizando prácticas orgánicas y
+								procesadas en frio dentro de las 24 hs, de su cosecha, sin la necesidad de
+								utilizar pesticidas o ningún otro producto sintético. Las aceitunas se
+								cosechan en su punto justo, con una excelente maduración y calidad, su
+								recolección durante la cosecha, se realiza a mano y se inicia en el mes de
+								Abril y culmina en Julio.
+							</em>
 						</p>
 					</div>
 				</div>

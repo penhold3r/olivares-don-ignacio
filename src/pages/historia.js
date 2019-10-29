@@ -31,12 +31,17 @@ const HistoryPage = () => {
 							incansablemente para construir un establecimiento de última generación que
 							actualmente es sinónimo de calidad. Su principal objetivo fue combinar las
 							técnicas de elaboración de aceite de oliva, con el clima y terroir
-							excepcionales de la región. Olivares de Don Ignacio orientó su producción a los
-							mercados internacionales, experimentando un gran crecimiento, con presencia en
-							todo el mundo, se ha constituido en líder de exportación del segmento de
-							Aceites de Oliva, Extra Virgen, Kosher y Orgánicos Premium, cosechando
-							numerosos reconocimientos y excelentes puntuaciones por parte de los más
-							prestigiosos organismos y medios internacionales.
+							excepcionales de la región.
+						</p>
+						<p>
+							<em>
+								Olivares de Don Ignacio orientó su producción a los mercados
+								internacionales, experimentando un gran crecimiento, con presencia en todo
+								el mundo, se ha constituido en líder de exportación del segmento de Aceites
+								de Oliva, Extra Virgen, Kosher y Orgánicos Premium, cosechando numerosos
+								reconocimientos y excelentes puntuaciones por parte de los más prestigiosos
+								organismos y medios internacionales.
+							</em>
 						</p>
 						<img className="olive-icon" src={olive} alt="" />
 					</div>

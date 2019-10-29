@@ -6,24 +6,27 @@ import oroliva from '../images/products/oroliva-500ml.jpg'
 
 export default [
 	{
-		name: 'Castelmonte Virgen Extra',
+		brand: 'Castelmonte',
+		variety: 'Virgen Extra',
 		image: castelmonte,
 		qty: '500ml, 250ml',
 		desc:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam voluptatem aperiam delectus recusandae quaerat tempora.'
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.'
 	},
 	{
-		name: 'Giglio Extra Virgen Organico',
+		brand: 'Giglio',
+		variety: 'Extra Virgen Organico',
 		image: giglio,
 		qty: '500ml, 250ml',
 		desc:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam voluptatem aperiam delectus recusandae quaerat tempora.'
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.'
 	},
 	{
-		name: 'Oroliva Virgen Extra',
+		brand: 'Oroliva',
+		variety: 'Virgen Extra',
 		image: oroliva,
 		qty: '500ml, 3000ml, 5000ml',
 		desc:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam voluptatem aperiam delectus recusandae quaerat tempora.'
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.'
 	}
 ]

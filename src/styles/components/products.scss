@@ -17,7 +17,8 @@ section.products {
 
 	.prods-list {
 		background: no-repeat center center / cover;
-		padding: 60px 1rem;
+		padding: 8rem 1rem;
+		background-attachment: fixed;
 
 		.prods-grid {
 			display: grid;
@@ -42,30 +43,54 @@ section.products {
 				}
 
 				.prod-name {
+					border-bottom: 1px solid $accent-color;
 					color: $main-color;
-					font-size: 1.25rem;
-					margin: 0;
+					font-size: 1.15rem;
+					margin: 0 auto 0.5rem;
 					text-align: center;
-					padding: 0.5rem 0 0;
+					padding: 0.5rem 0 0.5rem;
+					width: 70%;
+				}
+				.prod-variety {
+					color: $main-color;
+					font-style: italic;
+					margin: 0;
+					font-size: 0.8rem;
+					text-align: center;
+					padding: 0 0 0.5rem;
 				}
 
 				.prod-details {
 					background: linear-gradient(45deg, rgba($dark-color, 0.8), rgba($main-color, 0.8));
 					color: #fff;
-					height: 100%;
-					left: 0;
+					display: flex;
+					flex-direction: column;
+					font-size: 0.9rem;
+					height: calc(100% - 2rem);
+					left: 1rem;
+					line-break: 1.25;
 					opacity: 0;
 					padding: 0.5rem;
 					position: absolute;
-					top: 50%;
+					text-align: center;
+					top: 30%;
 					transition: all 0.4s;
-					width: 100%;
+					width: calc(100% - 2rem);
+
+					.prod-desc {
+						margin: auto auto 1rem;
+					}
+
+					.pack {
+						color: $accent-color;
+						margin: 0 auto auto;
+					}
 				}
 
 				&:hover {
 					.prod-details {
 						opacity: 1;
-						top: 0;
+						top: 1rem;
 					}
 				}
 			}
