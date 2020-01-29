@@ -1,5 +1,3 @@
-import demoImg from '../images/bottle.png'
-
 import castelmonte from '../images/products/castelmonte-500ml.jpg'
 import giglio from '../images/products/giglio_organico-500ml.jpg'
 import oroliva from '../images/products/oroliva-500ml.jpg'

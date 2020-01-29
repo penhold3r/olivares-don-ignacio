@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { navigate } from 'gatsby'
 import SmartLink from './SmartLink'
-import { Link as ScrollLink, scroller } from 'react-scroll'
+import { Link as scroller } from 'react-scroll'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import logo from '../images/olivares_don_ignacio-logo.svg'
-import facebook from '../images/facebook.svg'
-import twitter from '../images/twitter.svg'
-import instagram from '../images/instagram.svg'
 
 /*
 <ScrollLink to="productos" duration={500} smooth={true}>
@@ -33,7 +30,6 @@ const SiteHeader = () => {
 
 	const toggleMenu = () => {
 		setMenuOpen(!menuOpen)
-		console.log('huhihu')
 	}
 
 	const handleClick = (e, tgt) => {
@@ -52,7 +48,6 @@ const SiteHeader = () => {
 	}
 
 	useEffect(() => {
-		console.log(window.location.pathname)
 		setPathname(window.location.pathname)
 	}, [])
 

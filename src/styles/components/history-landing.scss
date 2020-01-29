@@ -37,10 +37,17 @@ section.history-landing {
 		p {
 			margin: 0 auto;
 			text-align: center;
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 			line-height: 1.25;
 			letter-spacing: 0.05rem;
 			max-width: 800px;
+
+			&.prods {
+				font-size: 1.2rem;
+				letter-spacing: 0.1rem;
+				margin: 0 auto 1rem;
+				text-transform: uppercase;
+			}
 		}
 
 		.history-link {

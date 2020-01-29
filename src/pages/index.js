@@ -45,11 +45,13 @@ const IndexPage = ({ location }) => {
 						</h4>
 					</div>
 					<div className="content" style={{ backgroundImage: `url(${oliveShape})` }}>
+						<p className="prods">
+							Aceite de oliva &#8226; Aceitunas &#8226; Productos Gourmet
+						</p>
 						<p>
-							Aceite de oliva / Aceitunas / Productos Gourmet en Mendoza Somos una empresa
-							familiar mendocina, que dedica todo su esfuerzo a la olivicultura y
-							vitivinicultura de Mendoza. Actualmente llevamos adelante la empresa los cinco
-							integrantes de la familia: papá, mamá y tres hermanos.
+							Somos una empresa familiar mendocina, que dedica todo su esfuerzo a la
+							olivicultura y vitivinicultura de Mendoza. Actualmente llevamos adelante la
+							empresa los cinco integrantes de la familia: papá, mamá y tres hermanos.
 						</p>
 						<Link className="history-link" to="/historia">
 							Descubra nuestra historia
