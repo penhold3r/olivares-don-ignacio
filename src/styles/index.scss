@@ -10,11 +10,15 @@
 	outline: none;
 }
 
+html,
+body {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: $light-color;
 	color: $dark-color;
 	font-family: $main-font;
-	scroll-behavior: smooth;
 
 	.page {
 		animation: fadeIn 0.4s linear forwards;

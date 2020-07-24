@@ -4,23 +4,22 @@ module.exports = {
 	siteMetadata: {
 		title: `Olivares de Don Ignacio`,
 		description: `Olivares de Don Ignacio es una empresa familiar mendocina, que dedica todo su esfuerzo a la olivicultura y vitivinicultura de Mendoza.`,
-		author: `@penholder`
 	},
 	plugins: [
 		{
 			resolve: `gatsby-plugin-sass`,
 			options: {
 				precision: 8,
-				importer: globImporter()
-			}
+				importer: globImporter(),
+			},
 		},
 		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `images`,
-				path: `${__dirname}/src/images`
-			}
+				path: `${__dirname}/src/images`,
+			},
 		},
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
@@ -35,9 +34,9 @@ module.exports = {
 				display: `standalone`,
 				orientation: 'portrait',
 				icon: `src/images/olivares-icon.png`, // This path is relative to the root of the site.
-				purpose: 'maskable any'
-			}
+				purpose: 'maskable any',
+			},
 		},
-		`gatsby-plugin-offline`
-	]
+		`gatsby-plugin-offline`,
+	],
 }
