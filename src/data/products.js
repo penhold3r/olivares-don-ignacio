@@ -9,7 +9,7 @@ export default [
 		image: castelmonte,
 		qty: '500ml, 250ml',
 		desc:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.'
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.',
 	},
 	{
 		brand: 'Giglio',
@@ -17,14 +17,14 @@ export default [
 		image: giglio,
 		qty: '500ml, 250ml',
 		desc:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.'
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.',
 	},
 	{
 		brand: 'Oroliva',
 		variety: 'Virgen Extra',
 		image: oroliva,
-		qty: '500ml, 3000ml, 5000ml',
+		qty: '500ml, 1000ml, 3000ml, 5000ml',
 		desc:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.'
-	}
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsum labore cum fugiat quibusdam.',
+	},
 ]
