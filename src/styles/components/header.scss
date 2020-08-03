@@ -2,7 +2,7 @@
 	background: rgba($light-color, 0.8);
 	position: fixed;
 	z-index: 99;
-	width: 100vw;
+	width: 100%;
 
 	@include tablet {
 		width: 100%;
@@ -13,7 +13,7 @@
 		background: linear-gradient(90deg, $main-color, rgba($dark-color, 0.7));
 		height: 2rem;
 		padding: 0 1rem;
-		width: 100vw;
+		width: 100%;
 
 		@include tablet {
 			display: none;
@@ -29,11 +29,11 @@
 				display: flex;
 				justify-content: space-between;
 				padding: 0;
-				width: 129px;
 
 				.social-link {
 					color: $accent-color;
-					display: flex;
+					display: inline-flex;
+					margin: 0 0.5rem;
 					height: 2rem;
 					padding: 0 6px;
 					transition: all 0.3s;

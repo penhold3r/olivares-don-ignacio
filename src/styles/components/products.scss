@@ -17,15 +17,31 @@ section.products {
 
 	.prods-list {
 		background: no-repeat center center / cover;
-		padding: 8rem 1rem;
 		background-attachment: fixed;
+		padding: 8rem 1rem;
+
+		.prods-header {
+			background: #eee;
+			margin: 0 auto 1rem;
+			height: 200px;
+			max-width: 800px;
+
+			img {
+				display: block;
+				height: 100%;
+				object-fit: contain;
+				mix-blend-mode: darken;
+				width: 100%;
+			}
+		}
 
 		.prods-grid {
 			display: grid;
-			grid-gap: 0.5rem;
-			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			margin: 0 auto;
-			max-width: 700px;
+			grid-gap: 1rem;
+			//grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-template-columns: repeat(4, 1fr);
+			margin: 0 auto 1rem;
+			max-width: 800px;
 
 			.prod-card {
 				background: $white;
@@ -83,7 +99,7 @@ section.products {
 
 					.pack {
 						color: $accent-color;
-						margin: 0 auto auto;
+						margin: auto;
 					}
 				}
 
