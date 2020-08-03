@@ -1,6 +1,25 @@
 section.products {
+	margin: 4rem 0 0;
 	padding: 1rem 0 0;
 	position: relative;
+
+	.prods-header {
+		margin: 0 auto 1rem;
+		height: 250px;
+		max-width: 800px;
+
+		@include tablet {
+			height: 200px;
+		}
+
+		img {
+			display: block;
+			height: 100%;
+			object-fit: contain;
+			mix-blend-mode: darken;
+			width: 100%;
+		}
+	}
 
 	.prods-title {
 		border-bottom: 3px solid $main-color;
@@ -20,35 +39,29 @@ section.products {
 		background-attachment: fixed;
 		padding: 8rem 1rem;
 
-		.prods-header {
-			background: #eee;
-			margin: 0 auto 1rem;
-			height: 200px;
-			max-width: 800px;
-
-			img {
-				display: block;
-				height: 100%;
-				object-fit: contain;
-				mix-blend-mode: darken;
-				width: 100%;
-			}
-		}
-
 		.prods-grid {
-			display: grid;
-			grid-gap: 1rem;
-			//grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			grid-template-columns: repeat(4, 1fr);
+			// display: grid;
+			// grid-gap: 1rem;
+			// //grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			// grid-template-columns: repeat(4, 1fr);
+			background: $white;
+			flex-wrap: wrap;
+			display: flex;
+			justify-content: center;
 			margin: 0 auto 1rem;
 			max-width: 800px;
 
 			.prod-card {
-				background: $white;
 				cursor: pointer;
 				padding: 0.5rem;
 				position: relative;
 				overflow: hidden;
+				width: 25%;
+				margin: 0;
+
+				@include phone {
+					width: 50%;
+				}
 
 				img {
 					display: block;
@@ -56,24 +69,6 @@ section.products {
 					mix-blend-mode: multiply;
 					object-fit: contain;
 					width: 100%;
-				}
-
-				.prod-name {
-					border-bottom: 1px solid $accent-color;
-					color: $main-color;
-					font-size: 1.15rem;
-					margin: 0 auto 0.5rem;
-					text-align: center;
-					padding: 0.5rem 0 0.5rem;
-					width: 70%;
-				}
-				.prod-variety {
-					color: $main-color;
-					font-style: italic;
-					margin: 0;
-					font-size: 0.8rem;
-					text-align: center;
-					padding: 0 0 0.5rem;
 				}
 
 				.prod-details {
@@ -108,6 +103,28 @@ section.products {
 						opacity: 1;
 						top: 1rem;
 					}
+				}
+			}
+
+			.prod-text {
+				width: 100%;
+
+				.prod-name {
+					border-bottom: 1px solid $accent-color;
+					color: $main-color;
+					font-size: 1.15rem;
+					margin: 0 auto 0.5rem;
+					text-align: center;
+					padding: 0.5rem 0 0.5rem;
+					width: 70%;
+				}
+				.prod-variety {
+					color: $main-color;
+					font-style: italic;
+					margin: 0;
+					font-size: 0.8rem;
+					text-align: center;
+					padding: 0 0 0.5rem;
 				}
 			}
 		}

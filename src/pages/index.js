@@ -61,25 +61,27 @@ const IndexPage = ({ location }) => {
 				</section>
 
 				<section className='products' id='productos'>
+					<div className='prods-header'>
+						<img src={prodsHeader} alt='' />
+					</div>
 					<h2 className='prods-title'>Nuestros Productos</h2>
 					<div className='prods-list' style={{ backgroundImage: `url(${oliveTree})` }}>
-						<div className='prods-header'>
-							<img src={prodsHeader} alt='' />
-						</div>
 						{products &&
 							products.map((prod, key) => (
 								<div className='prods-grid' key={key}>
 									{prod.bottles.map((bottle, key) => (
 										<div key={key} className='prod-card'>
 											<img src={bottle.image} alt={`bottle of ${prod.brand}`} />
-											<h4 className='prod-name'>{prod.brand}</h4>
-											<p className='prod-variety'>{prod.variety}</p>
 											<div className='prod-details'>
 												{/* <p className='prod-desc'>{prod.desc}</p> */}
 												<p className='pack'>{bottle.cont}</p>
 											</div>
 										</div>
 									))}
+									<div className='prod-text'>
+										<h4 className='prod-name'>{prod.brand}</h4>
+										<p className='prod-variety'>{prod.variety}</p>
+									</div>
 								</div>
 							))}
 					</div>
