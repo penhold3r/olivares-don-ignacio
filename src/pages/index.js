@@ -5,7 +5,7 @@ import { Parallax } from 'react-parallax'
 import hero from '../images/header.jpg'
 import oliveShape from '../images/olive.gif'
 import oliveTree from '../images/products_bg.jpg'
-import prodsHeader from '../images/olivares_don_ignacio-productos.jpg'
+import prodsHeader from '../images/olivares_don_ignacio-productos.png'
 
 import Wrapper from '../components/Wrapper'
 

@@ -79,6 +79,8 @@
 		}
 
 		.hamb-menu {
+			border: none;
+			background: none;
 			display: none;
 
 			@include tablet {

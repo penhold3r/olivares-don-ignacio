@@ -75,13 +75,14 @@ const SiteHeader = () => {
 					</SmartLink>
 				</h1>
 
-				<div
+				<button
 					className={menuOpen ? 'hamb-menu crossed' : 'hamb-menu'}
+					title='Menu'
 					onClick={() => toggleMenu()}>
 					<div className='menu-bar'></div>
 					<div className='menu-bar'></div>
 					<div className='menu-bar'></div>
-				</div>
+				</button>
 
 				<nav className={menuOpen ? 'main-nav open' : 'main-nav'}>
 					<ul className='nav-list'>

@@ -13,6 +13,7 @@
 html,
 body {
 	scroll-behavior: smooth;
+	@include scrollbars(10px, $dark-color, $main-color);
 }
 
 body {
