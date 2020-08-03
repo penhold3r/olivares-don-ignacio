@@ -15,8 +15,6 @@ const IndexPage = ({ location }) => {
 	useEffect(() => {
 		const { state } = location
 
-		console.log(document.querySelector('#productos').offsetTop)
-
 		state &&
 			state.toScroll &&
 			state.toScroll === 'productos' &&

@@ -91,17 +91,17 @@ const SiteHeader = () => {
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a href='/historia' onClick={e => handleClick(e, 'historia')}>
+							<a href='/historia' onClick={e => handleClick(e, '/historia')}>
 								Historia
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a href='/olivares' onClick={e => handleClick(e, 'olivares')}>
+							<a href='/olivares' onClick={e => handleClick(e, '/olivares')}>
 								Olivares
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a href='/organicos' onClick={e => handleClick(e, 'organicos')}>
+							<a href='/organicos' onClick={e => handleClick(e, '/organicos')}>
 								Orgánicos
 							</a>
 						</li>

@@ -1,12 +1,16 @@
 import React from 'react'
 
 import Wrapper from '../components/Wrapper'
+import SmartLink from '../components/SmartLink'
 
 const NotFoundPage = () => (
-	<Wrapper pageTitle="Página no encontrada">
-		<section className="page">
+	<Wrapper title='Página no encontrada'>
+		<section className='page404'>
 			<h2>404</h2>
-			<p>Oopsy...</p>
+			<p>La página que busca no existe o no esta disponible.</p>
+			<SmartLink to='/' className='not-found-link'>
+				Volver al inicio
+			</SmartLink>
 		</section>
 	</Wrapper>
 )
