@@ -1,5 +1,5 @@
 section.contact {
-	background: linear-gradient(45deg, $main-color, $dark-color);
+	background: linear-gradient(45deg, rgba($main-color, 0.9), rgba($dark-color, 0.9));
 	padding: 3rem 0.5rem;
 	position: relative;
 
@@ -9,7 +9,7 @@ section.contact {
 		font-family: $display-font;
 		font-weight: normal;
 		letter-spacing: 0.075rem;
-		margin: 0 auto 1rem;
+		margin: 0 auto 2rem;
 		padding-bottom: 0.5rem;
 		text-align: center;
 		text-transform: uppercase;

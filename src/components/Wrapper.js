@@ -6,6 +6,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 
 import SiteHeader from './SiteHeader'
+import Contact from '../components/Contact'
 import SiteFooter from './SiteFooter'
 
 import 'sanitize.css'
@@ -39,69 +40,72 @@ const Wrapper = ({ title, children }) => (
 						meta={[
 							{
 								property: 'og:image',
-								content: opengraph
+								content: opengraph,
 							},
 							{
 								name: 'twitter:image',
-								content: opengraph
+								content: opengraph,
 							},
 							{
 								name: 'description',
-								content: site.siteMetadata.description
+								content: site.siteMetadata.description,
 							},
 							{
 								property: 'og:description',
-								content: site.siteMetadata.description
+								content: site.siteMetadata.description,
 							},
 							{
 								name: 'twitter:description',
-								content: site.siteMetadata.description
+								content: site.siteMetadata.description,
 							},
 							{
 								property: 'og:title',
-								content: pageTitle
+								content: pageTitle,
 							},
 							{
 								name: 'twitter:title',
-								content: pageTitle
+								content: pageTitle,
 							},
 							{
 								property: 'og:url',
-								content: 'https://olivares-don-ignacio.com/'
+								content: 'https://olivares-don-ignacio.com/',
 							},
 							{
 								name: 'twitter:site',
-								content: 'https://olivares-don-ignacio.com/'
+								content: 'https://olivares-don-ignacio.com/',
 							},
 							{
 								property: 'og:type',
-								content: 'Website'
+								content: 'Website',
 							},
 							{
 								name: 'twitter:card',
-								content: 'summary_large_image'
+								content: 'summary_large_image',
 							},
 							{
 								name: 'keywords',
-								content: 'oliva, olivares, aceite de oliva, gourmet, mendoza'
-							}
+								content: 'oliva, olivares, aceite de oliva, gourmet, mendoza',
+							},
 						]}
 						link={[
 							{
 								href: faviconICO,
 								rel: 'shortcut icon',
-								type: 'image/x-icon'
+								type: 'image/x-icon',
 							},
 							{
 								href: faviconPNG,
 								rel: 'shortcut icon',
 								type: 'image/png',
-								sizes: '32x32 192x192'
-							}
+								sizes: '32x32 192x192',
+							},
 						]}
 					/>
 					<SiteHeader />
-					<main>{children}</main>
+					<main>
+						{children}
+						<Contact />
+					</main>
 					<SiteFooter />
 				</>
 			)
