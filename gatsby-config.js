@@ -26,8 +26,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `olivares-don-ignacio`,
-				short_name: `don-ignacio`,
+				name: `Olivares Don Ignacio`,
+				short_name: `Don Ignacio`,
 				start_url: `/`,
 				background_color: `#f0e9d9`,
 				theme_color: `#7f8571`,

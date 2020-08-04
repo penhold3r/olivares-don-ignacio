@@ -68,11 +68,11 @@ const Wrapper = ({ title, children }) => (
 							},
 							{
 								property: 'og:url',
-								content: 'https://olivares-don-ignacio.com/',
+								content: 'http://olivaresdonignacio.com/',
 							},
 							{
 								name: 'twitter:site',
-								content: 'https://olivares-don-ignacio.com/',
+								content: 'http://olivaresdonignacio.com/',
 							},
 							{
 								property: 'og:type',
