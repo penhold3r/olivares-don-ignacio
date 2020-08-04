@@ -14,45 +14,44 @@ import branchesBg from '../images/olive-branches-bg.svg'
 
 const OrganicPage = () => {
 	return (
-		<Wrapper title="Prácticas Orgánicas">
-			<section className="page organic">
-				<header className="organic__header page-header">
+		<Wrapper title='Prácticas Orgánicas'>
+			<section className='page organic'>
+				<header className='organic__header page-header'>
 					<Parallax
-						className="page-hero"
+						className='page-hero'
 						bgImage={organicHero}
 						strength={400}
-						style={{ height: '100%', width: '100%' }}
-					>
-						<h2 className="organic-title page-title">Prácticas Orgánicas</h2>
+						style={{ height: '100%', width: '100%' }}>
+						<h2 className='organic-title page-title'>Prácticas Orgánicas</h2>
 					</Parallax>
 				</header>
-				<div className="organic__content" style={{ backgroundImage: `url(${branchesBg})` }}>
-					<ul className="practices">
-						<li className="practices__block">
-							<p>No se utilizan productos de síntesis química.</p>
+				<div className='organic__content' style={{ backgroundImage: `url(${branchesBg})` }}>
+					<ul className='practices'>
+						<li className='practices__block'>
+							<p>No se utilizan productos de síntesis química</p>
 						</li>
-						<li className="practices__block">
-							<p>Cuidado del recurso hídrico.</p>
+						<li className='practices__block'>
+							<p>Cuidado del recurso hídrico</p>
 						</li>
-						<li className="practices__block">
-							<p>Cosecha A mano.</p>
+						<li className='practices__block'>
+							<p>Cosecha A mano</p>
 						</li>
-						<li className="practices__block">
+						<li className='practices__block'>
 							<p>Procesadas en frio dentro de las 24 hs.</p>
 						</li>
 					</ul>
-					<div className="certifications">
+					<div className='certifications'>
 						<img
 							src={organicoArgentina}
-							alt="Organico Argentina"
-							className="certifications__logo"
+							alt='Organico Argentina'
+							className='certifications__logo'
 						/>
-						<img src={USDAOrganic} alt="USDA Organic" className="certifications__logo" />
-						<img src={uKosher} alt="U Kosher" className="certifications__logo" />
-						<img src={tacc} alt="T.A.C.C." className="certifications__logo" />
+						<img src={USDAOrganic} alt='USDA Organic' className='certifications__logo' />
+						<img src={uKosher} alt='U Kosher' className='certifications__logo' />
+						<img src={tacc} alt='T.A.C.C.' className='certifications__logo' />
 					</div>
-					<div className="description">
-						<h3 className="description__title">Productos Orgánicos</h3>
+					<div className='description'>
+						<h3 className='description__title'>Productos Orgánicos</h3>
 						<p>
 							<em>
 								Olivares de Don Ignacio elabora aceites orgánicos premium, se elaboran con

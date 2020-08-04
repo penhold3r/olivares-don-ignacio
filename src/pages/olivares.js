@@ -2,25 +2,32 @@ import React from 'react'
 import { Parallax } from 'react-parallax'
 
 import oliveHero from '../images/don_ignacio-olivares.jpg'
+import branchesBg from '../images/olive-branches-bg.svg'
 
 import Wrapper from '../components/Wrapper'
 
 const OlivesPage = () => (
-	<Wrapper title="Olivares">
-		<section className="page olive">
-			<header className="olive__header page-header">
+	<Wrapper title='Olivares'>
+		<section className='page olive'>
+			<header className='olive__header page-header'>
 				<Parallax
-					className="page-hero"
+					className='page-hero'
 					bgImage={oliveHero}
+					bgImageStyle={{
+						fitPosition: 'center 70%',
+						height: '150%',
+						objectFit: 'cover',
+						top: 0,
+						width: '100%',
+					}}
 					strength={400}
-					style={{ height: '100%', width: '100%' }}
-				>
-					<h2 className="olive-title page-title">Olivares</h2>
+					style={{ height: '100%', width: '100%' }}>
+					<h2 className='olive-title page-title'>Olivares</h2>
 				</Parallax>
 			</header>
-			<div className="olive__content">
-				<div className="olive-block">
-					<h3 className="olive-block__title">Terroir</h3>
+			<div className='olive__content' style={{ backgroundImage: `url(${branchesBg})` }}>
+				<div className='olive-block'>
+					<h3 className='olive-block__title'>Terroir</h3>
 					<p>
 						<em>
 							Olivares de Don Ignacio cuenta con 56 has, con las condiciones ideales para el
@@ -33,8 +40,8 @@ const OlivesPage = () => (
 						</em>
 					</p>
 				</div>
-				<div className="olive-block">
-					<h3 className="olive-block__title">Clima</h3>
+				<div className='olive-block'>
+					<h3 className='olive-block__title'>Clima</h3>
 					<p>
 						<em>
 							Las fincas ubicadas al pie de la cordillera de Los Andes, irrigadas con agua de
@@ -45,8 +52,8 @@ const OlivesPage = () => (
 						</em>
 					</p>
 				</div>
-				<div className="olive-block">
-					<h3 className="olive-block__title">Olivares</h3>
+				<div className='olive-block'>
+					<h3 className='olive-block__title'>Olivares</h3>
 					<p>
 						<em>
 							Nuestros olivares están formados por arboles de un solo tronco, en su mayoría

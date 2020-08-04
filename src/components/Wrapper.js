@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faEnvelope, faPhoneAlt, faIndustry } from '@fortawesome/free-solid-svg-icons'
 
 import SiteHeader from './SiteHeader'
 import Contact from '../components/Contact'
@@ -16,7 +16,7 @@ import opengraph from '../images/olivares-og.png'
 import faviconICO from '../images/favicon.ico'
 import faviconPNG from '../images/favicon.png'
 
-library.add(fab, faHome, faEnvelope, faPhoneAlt)
+library.add(fab, faHome, faIndustry, faEnvelope, faPhoneAlt)
 
 const Wrapper = ({ title, children }) => (
 	<StaticQuery

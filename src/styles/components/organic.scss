@@ -19,8 +19,10 @@
 			&__block {
 				background: $main-color;
 				border: 1px solid $accent-color;
+				box-shadow: inset 0 0 0 1px transparent;
 				display: flex;
 				padding: 2rem 1.5rem;
+				transition: all 0.3s;
 
 				p {
 					color: $white;
@@ -29,6 +31,10 @@
 					letter-spacing: 0.05rem;
 					text-align: center;
 					text-transform: uppercase;
+				}
+
+				&:hover {
+					box-shadow: inset 0 0 0 6px $accent-color;
 				}
 			}
 		}

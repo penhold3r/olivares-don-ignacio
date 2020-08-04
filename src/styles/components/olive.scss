@@ -1,6 +1,9 @@
 .olive {
 	&__content {
 		background: $white;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
 		padding: 6rem 1rem 9rem;
 
 		.olive-block {

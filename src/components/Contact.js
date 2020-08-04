@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import oliveShape from '../images/olive.gif'
+
 const Contact = () => {
 	return (
 		<section className='contact' id='contacto'>
@@ -8,21 +10,22 @@ const Contact = () => {
 			<div className='contact-content'>
 				<div className='contact-info'>
 					<div className='contact-block'>
-						<FontAwesomeIcon className='fa' icon={['fas', 'home']} />
+						<FontAwesomeIcon className='fa' icon={['fas', 'industry']} />
 						<p>Ruta 62 S/N, Rivadavia, Mendoza, Argentina</p>
 					</div>
 					<div className='contact-block'>
 						<FontAwesomeIcon className='fa' icon={['fas', 'phone-alt']} />
 						<p>
-							tel.: <a href='tel:123456789'>123 456 789</a>
+							Tel.: <a href='tel:123456789'>123 456 789</a>
 						</p>
 					</div>
 					<div className='contact-block'>
 						<FontAwesomeIcon className='fa' icon={['fas', 'envelope']} />
 						<p>
-							mail: <a href='mailto:info@olivares.com'>ventas@olivaresdedonignacio.com</a>
+							Mail: <a href='mailto:info@olivares.com'>ventas@olivaresdedonignacio.com</a>
 						</p>
 					</div>
+					<img src={oliveShape} alt='Olive' className='olive' />
 				</div>
 				<form action='' className='contact-form'>
 					<div className='form-field'>
