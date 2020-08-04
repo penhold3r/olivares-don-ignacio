@@ -11,18 +11,24 @@ const Contact = () => {
 				<div className='contact-info'>
 					<div className='contact-block'>
 						<FontAwesomeIcon className='fa' icon={['fas', 'industry']} />
-						<p>Ruta 62 S/N, Rivadavia, Mendoza, Argentina</p>
+						<p>
+							<em>Ruta 62 S/N, Rivadavia, Mendoza, Argentina</em>
+						</p>
 					</div>
 					<div className='contact-block'>
 						<FontAwesomeIcon className='fa' icon={['fas', 'phone-alt']} />
 						<p>
-							Tel.: <a href='tel:123456789'>123 456 789</a>
+							<em>
+								Tel.: <a href='tel:123456789'>123 456 789</a>
+							</em>
 						</p>
 					</div>
 					<div className='contact-block'>
 						<FontAwesomeIcon className='fa' icon={['fas', 'envelope']} />
 						<p>
-							Mail: <a href='mailto:info@olivares.com'>ventas@olivaresdedonignacio.com</a>
+							<em>
+								Mail: <a href='mailto:info@olivares.com'>ventas@olivaresdedonignacio.com</a>
+							</em>
 						</p>
 					</div>
 					<img src={oliveShape} alt='Olive' className='olive' />
