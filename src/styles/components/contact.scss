@@ -1,6 +1,6 @@
 section.contact {
 	background: linear-gradient(45deg, rgba($main-color, 0.9), rgba($dark-color, 0.9));
-	padding: 3rem 0.5rem;
+	padding: 3rem 1rem;
 	position: relative;
 
 	h2 {
@@ -30,7 +30,8 @@ section.contact {
 
 			@include tablet {
 				padding: 1rem;
-				text-align: center;
+				margin: 0 auto;
+				max-width: 480px;
 				width: 100%;
 			}
 
@@ -47,6 +48,7 @@ section.contact {
 					color: $white;
 					font-family: $display-font;
 					margin: 0 0 0 1rem;
+					line-height: 1.2;
 
 					a {
 						color: rgba($light-color, 0.8);
@@ -64,6 +66,11 @@ section.contact {
 				object-position: left center;
 				object-fit: contain;
 				margin: auto 0 0;
+
+				@include tablet {
+					height: 50px;
+					margin: 1rem 0;
+				}
 			}
 		}
 

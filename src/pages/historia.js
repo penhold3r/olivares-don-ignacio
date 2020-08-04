@@ -6,24 +6,23 @@ import olive from '../images/olive.svg'
 
 import Wrapper from '../components/Wrapper'
 
-import branchesBg from '../images/olive-branches-bg.svg'
+import branchesBg from '../images/olive-branches-bg.jpg'
 
 const HistoryPage = () => {
 	return (
-		<Wrapper title="Historia">
-			<section className="page history">
-				<header className="history__header page-header">
+		<Wrapper title='Historia'>
+			<section className='page history'>
+				<header className='history__header page-header'>
 					<Parallax
-						className="page-hero"
+						className='page-hero'
 						bgImage={historyHero}
 						strength={400}
-						style={{ height: '100%', width: '100%' }}
-					>
-						<h2 className="history-title page-title">Historia</h2>
+						style={{ height: '100%', width: '100%' }}>
+						<h2 className='history-title page-title'>Historia</h2>
 					</Parallax>
 				</header>
-				<div className="history__content" style={{ backgroundImage: `url(${branchesBg})` }}>
-					<div className="content-block">
+				<div className='history__content' style={{ backgroundImage: `url(${branchesBg})` }}>
+					<div className='content-block'>
 						<p>
 							Olivares de Don Ignacio, fundada en 1946, en el departamento Rivadavia en la
 							Provincia de Mendoza. A partir de ese momento su pasión es la producción de
@@ -43,7 +42,7 @@ const HistoryPage = () => {
 								organismos y medios internacionales.
 							</em>
 						</p>
-						<img className="olive-icon" src={olive} alt="" />
+						<img className='olive-icon' src={olive} alt='' />
 					</div>
 				</div>
 			</section>

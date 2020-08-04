@@ -5,12 +5,12 @@ import Wrapper from '../components/Wrapper'
 
 import organicHero from '../images/don_ignacio-organico.jpg'
 
+import branchesBg from '../images/olive-branches-bg.jpg'
+
 import organicoArgentina from '../images/organico-argentina.svg'
 import USDAOrganic from '../images/USDA-organic.svg'
 import uKosher from '../images/u-kosher.svg'
 import tacc from '../images/t.a.c.c.svg'
-
-import branchesBg from '../images/olive-branches-bg.svg'
 
 const OrganicPage = () => {
 	return (

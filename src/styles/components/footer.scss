@@ -1,6 +1,19 @@
 .site-footer {
 	background: $dark-color;
-	color: $white;
 	padding: 4rem 1rem;
-	text-align: center;
+
+	.copy {
+		color: $white;
+		text-align: center;
+		letter-spacing: 0.08rem;
+
+		.ph {
+			color: rgba($white, 0.7);
+			text-decoration: none;
+
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
 }

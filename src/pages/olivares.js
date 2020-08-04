@@ -2,7 +2,7 @@ import React from 'react'
 import { Parallax } from 'react-parallax'
 
 import oliveHero from '../images/don_ignacio-olivares.jpg'
-import branchesBg from '../images/olive-branches-bg.svg'
+import branchesBg from '../images/olive-branches-bg.jpg'
 
 import Wrapper from '../components/Wrapper'
 
