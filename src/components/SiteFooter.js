@@ -30,6 +30,8 @@ const SiteFooter = () => {
 							penHolder Designerd
 						</SmartLink>
 					</span>
+					<span>&emsp;|&emsp;</span>
+					<span>Diseñado por BeWine Agency</span>
 				</small>
 			</div>
 		</footer>

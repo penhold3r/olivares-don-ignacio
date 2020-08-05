@@ -9,7 +9,7 @@ const SmartLink = ({ children, to, activeClassName, ...other }) => {
 			{children}
 		</GatsbyLink>
 	) : (
-		<a href={to} {...other} rel="noopener noreferrer">
+		<a href={to} {...other} target='_blank' rel='noopener noreferrer'>
 			{children}
 		</a>
 	)
