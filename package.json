@@ -29,7 +29,7 @@
 		"gatsby-plugin-sharp": "^2.6.24",
 		"gatsby-source-filesystem": "^2.3.23",
 		"gatsby-transformer-sharp": "^2.5.12",
-		"node-sass": "^4.14.1",
+		"node-sass": "^7.0.0",
 		"node-sass-glob-importer": "^5.3.2",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
